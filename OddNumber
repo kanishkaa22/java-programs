@@ -1,0 +1,16 @@
+package array_based_problems;
+
+import java.util.Scanner;
+
+public class OddNumbers {
+
+	public static void main(String[] args) {
+		int[] arr = {3, 4, 7, 8, 9};
+		System.out.println("Odd numbers in the array:");
+		for (int num : arr){
+			if(num % 2 != 0) {
+				System.out.println(num);
+			}
+		}
+	}
+	}
