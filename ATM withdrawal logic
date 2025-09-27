@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+
+public class ATMWithdrawal {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input the amount
+        int amount = sc.nextInt();
+        sc.nextLine(); // consume newline
+
+        // Input note status
+        String noteStatus = sc.nextLine().trim();
+
+        if (noteStatus.equals("available") && amount % 100 == 0) {
+            System.out.println("Amount " + amount + " can be withdrawn");
+        } else if (noteStatus.equals("not available") && amount % 500 == 0) {
+            System.out.println("Amount " + amount + " can be withdrawn");
+        } else {
+            System.out.println("Enter amount in multiples of 500");
+        }
+
+        sc.close();
+    }
+}
+
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    
