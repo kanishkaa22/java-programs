@@ -1,0 +1,17 @@
+package array_based_problems;
+
+public class EvenIndices {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {2, 5, 8, 11, 14};
+		System.out.println("Even indices numbers in the array:");
+		for (int num : arr){
+			if(num % 2 != 0) {
+				System.out.println(num);
+			}
+		}
+
+	}
+
+}
