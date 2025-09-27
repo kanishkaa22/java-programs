@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        float b = sc.nextFloat();
+        sc.nextLine();
+        String c = sc.nextLine();
+        String formattedHeight = String.format("%.2f", b);
+        System.out.println(c+ " is " +a+ " years old and " +formattedHeight+ " meters tall. ");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
