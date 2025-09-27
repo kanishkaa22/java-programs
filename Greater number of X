@@ -1,0 +1,17 @@
+package array_based_problems;
+
+public class GreaterNumberOfX {
+	    public static void main(String[] args) {
+	        int[] arr = {1, 4, 7, 2};
+	        int x = 3;
+
+	        System.out.println("Numbers greater than " + x + " are:");
+	        for (int num : arr) {
+	            if (num > x) {  // check if element is greater than x
+	                System.out.println(num);
+	            }
+	        }
+	    }
+	}
+
+
